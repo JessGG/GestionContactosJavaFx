@@ -1,0 +1,109 @@
+
+.ikonli-font-icon {
+    -fx-icon-color: #C5283D;
+
+}
+
+/*//////// VISTA ANIDADA //////// */
+
+#vbox {
+    -fx-background-color: #232323 ;
+}
+#paneAnidada{
+    -fx-background-color: #232323 ;
+}
+.label{
+    -fx-text-fill: white;
+}
+.list-cell:selected{
+    -fx-text-fill:#C5283D ;
+}
+
+.label {
+    -fx-padding: 3;
+}
+
+#vboxGrafico{
+-fx-background-color: #232323 ;
+-fx-text-fill: #1E1E1E
+}
+/*//////// BOTONES //////////*/
+
+#button_menu {
+    -fx-padding: 10;
+
+}
+.button{
+    -fx-border: none;
+    -fx-background: none;
+    -fx-text-fill: white;
+}
+#botonGrafico{
+     -fx-background-color:#C5283D ;
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+
+}
+/*//////////PIE CHART //////////*/
+
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+   -fx-text-fill: white;
+}
+.chart-legend-item{
+    -fx-text-fill:  white;
+}
+/*//////// LIST VIEW ///////// */
+
+#listView{
+    -fx-padding: 30;
+    -fx-background-color: #232323;
+}
+
+.list-cell{
+    -fx-background-color: #232323;
+    -fx-text-fill: white;
+}
+.list-cell:hover{
+    -fx-background-color:#C5283D ;
+}
+
+/*//////////// MENU //////////// */
+
+#box_menu {
+    -fx-background-color: #1E1E1E;
+}
+
+#labelMenu{
+    -fx-background-color: #C5283D;
+    -fx-text-fill: #DDE5E8 ;
+    -fx-padding: 30px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Droid Sans Mono Slashed";
+}
+#menu_ButtonDark{
+    -fx-text-fill: #DDE5E8 ;
+    -fx-font-family: "Droid Sans Mono Slashed";
+    -fx-font-weight: bold;
+
+}
+#menu_ButtonLight{
+    -fx-text-fill: #DDE5E8 ;
+    -fx-font-family: "Droid Sans Mono Slashed";
+    -fx-font-weight: bold;
+}
+#menu_ButtonLight:hover{
+    -fx-background-color: #232323;
+}
+#menu_ButtonDark:hover{
+    -fx-background-color: #232323;
+}
+#menu_ButtonExit{
+    -fx-text-fill: #DDE5E8 ;
+    -fx-font-weight: bold;
+    -fx-font-family: "Droid Sans Mono Slashed";
+}
+#menu_ButtonExit:hover{
+    -fx-background-color: #1E1E1E;
+}

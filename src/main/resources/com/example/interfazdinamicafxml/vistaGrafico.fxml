@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="vistaGrafico" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.interfazdinamicafxml.VistaGraficoController">
+    <children>
+        <VBox fx:id="vboxGrafico" prefHeight="200.0" prefWidth="100.0">
+            <children>
+                <Button fx:id="botonBackGrafico" mnemonicParsing="false" onAction="#esconderGrafico"
+                        text="%button.back">
+                    <graphic>
+                        <FontIcon fx:id="menu_icon" iconLiteral="mdi2a-arrow-collapse-right" iconSize="20"/>
+                    </graphic>
+                </Button>
+                <PieChart fx:id="pieChart" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                          minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </PieChart>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

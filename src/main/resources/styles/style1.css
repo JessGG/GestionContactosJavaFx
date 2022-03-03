@@ -1,0 +1,84 @@
+/*//////// VISTA ANIDADA //////// */
+
+.ikonli-font-icon {
+    -fx-icon-color: #DD403A;
+
+}
+.label {
+    -fx-padding: 3;
+}
+
+/*//////// BOTOONES //////////*/
+#button_menu {
+    -fx-padding: 10;
+}
+.button{
+    -fx-border: none;
+    -fx-background: none;
+}
+
+
+#botonGrafico{
+     -fx-background-color:#C5283D ;
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+
+}
+
+/*//////// LIST VIEW ///////// */
+
+#listView{
+    -fx-padding: 30;
+}
+.list-cell{
+    -fx-background-color: white;
+}
+.list-cell:hover{
+    -fx-background-color:#C5283D ;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected{
+    -fx-text-fill:#C5283D ;
+}
+
+/*//////////// MENU //////////// */
+
+#box_menu {
+    -fx-background-color: #E3E7EA;
+}
+
+#labelMenu{
+    -fx-background-color: #C5283D;
+    -fx-text-fill: #232323 ;
+    -fx-padding: 30px;
+    -fx-font-weight: bold;
+}
+#menu_ButtonDark{
+    -fx-text-fill: #232323 ;
+    -fx-font-weight: bold;
+
+}
+#menu_ButtonLight{
+    -fx-text-fill: #232323 ;
+    -fx-font-weight: bold;
+}
+#menu_ButtonLight:hover{
+    -fx-background-color: #e5d3d3;
+}
+#menu_ButtonDark:hover{
+     -fx-background-color: #e5d3d3;
+ }
+#menu_ButtonExit{
+    -fx-text-fill: #232323 ;
+    -fx-font-weight: bold;
+    -fx-font-family: "Droid Sans Mono Slashed";
+}
+#menu_ButtonExit:hover{
+    -fx-background-color: #e5d3d3;
+}
+.data0.chart-pie { -fx-pie-color: turquoise; }
+.data1.chart-pie { -fx-pie-color: aquamarine; }
+.data2.chart-pie { -fx-pie-color: cornflowerblue; }
+
+.chart-legend { -fx-background-color: sienna; }

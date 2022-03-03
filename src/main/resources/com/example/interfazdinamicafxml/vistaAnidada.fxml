@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<AnchorPane fx:id="vistaAnidada" prefHeight="600.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.VistaAnidadaController">
+    <Pane fx:id="paneAnidada" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="300.0">
+        <children>
+
+            <VBox fx:id="vbox" alignment="CENTER" layoutX="50.0" layoutY="170.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <Circle fx:id="circulo" fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Circle>
+                <Separator prefWidth="200.0">
+                    <padding>
+                        <Insets bottom="20.0" />
+                    </padding>
+                </Separator>
+                <Label fx:id="nombre" text="Nombre">
+                    <graphic>
+                        <FontIcon fx:id="nombre_icon" iconLiteral="mdi2a-account-circle" iconSize="20" />
+                    </graphic>
+                </Label>
+                <Label fx:id="status" text="Correo">
+                    <!--   <graphic>
+                           <FontIcon fx:id="status_icon" iconLiteral="mdi2c-cards-heart" iconSize="20" />
+                       </graphic>-->
+                </Label>
+            </VBox>
+
+            <Button fx:id="buttonBack" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#closeVista" text="%button.back">
+                <graphic>
+                    <FontIcon fx:id="menu_icon" iconLiteral="mdi2a-arrow-collapse-right" iconSize="20" />
+                </graphic>
+            </Button>
+        </children>
+    </Pane>
+
+</AnchorPane>

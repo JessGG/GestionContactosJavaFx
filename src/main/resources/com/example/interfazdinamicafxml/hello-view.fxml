@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<StackPane id="fondo" fx:id="fondo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0" stylesheets="@../../../styles/style1.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfazdinamicafxml.VistaController">
+   <Label text="Label" />
+    <ListView id="listView" fx:id="listView">
+        <padding>
+            <Insets bottom="70.0" />
+        </padding>
+    </ListView>
+    <Button fx:id="botonGrafico" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#vistaGrafico" text="%botonGrafico" StackPane.alignment="BOTTOM_CENTER">
+        <StackPane.margin>
+            <Insets bottom="10.0" />
+        </StackPane.margin>
+    </Button>
+   <HBox alignment="TOP_CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="291.0" StackPane.alignment="BOTTOM_CENTER">
+      <children>
+          <Button fx:id="lastPage" mnemonicParsing="false" onAction="#lastPage">
+              <graphic>
+                  <FontIcon fx:id="iconLast" iconLiteral="mdi2a-arrow-left" iconSize="20" />
+              </graphic>
+            </Button>
+          <Button fx:id="nextPage" mnemonicParsing="false" onAction="#nextPage">
+              <graphic>
+                  <FontIcon fx:id="iconNext" iconLiteral="mdi2a-arrow-right" iconSize="20" />
+              </graphic>
+          </Button>
+      </children>
+      <StackPane.margin>
+         <Insets bottom="40.0" />
+      </StackPane.margin></HBox>
+
+    <Button id="button_menu" fx:id="buttonMenu" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#sacarMenu" StackPane.alignment="TOP_LEFT">
+        <graphic>
+            <FontIcon fx:id="menu_icon" iconLiteral="mdi2m-menu" iconSize="20" />
+        </graphic>
+    </Button>
+
+    <VBox id="box_menu" fx:id="boxMenu" maxHeight="1.7976931348623157E308" maxWidth="120.0" StackPane.alignment="TOP_LEFT">
+        <Label fx:id="labelMenu" maxWidth="1.7976931348623157E308" text="%label.menu" />
+        <Separator />
+        <Button id="menu_ButtonDark" fx:id="button_language" maxWidth="1.7976931348623157E308" minWidth="50.0" mnemonicParsing="false" onAction="#darkTheme" text="%Button.dark">
+            <graphic>
+                <FontIcon fx:id="menu_darkIcon" iconLiteral="mdi2m-moon-waxing-crescent" iconSize="20" />
+            </graphic>
+        </Button>
+        <Button id="menu_ButtonLight" fx:id="buttonLight" maxWidth="1.7976931348623157E308" minWidth="50.0" mnemonicParsing="false" onAction="#lightTheme" text="%Button.light">
+            <graphic>
+                <FontIcon fx:id="menu_LightIcon" iconLiteral="mdi2w-white-balance-sunny" iconSize="20" />
+            </graphic>
+        </Button>
+        <Separator />
+        <Button fx:id="menu_ButtonExit" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exit" text="%button.salir">
+            <graphic>
+                <FontIcon fx:id="menu_ExitIcon" iconLiteral="mdi2e-exit-run" iconSize="20" />
+            </graphic>
+
+        </Button>
+
+
+    </VBox>
+    <fx:include fx:id="vistaAnidada" maxHeight="1.7976931348623157E308" source="vistaAnidada.fxml" style="-fx-background-color: #E3E7EA" />
+    <fx:include fx:id="vistaGrafico" maxHeight="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" source="vistaGrafico.fxml" style="-fx-background-color: #E3E7EA" />
+
+</StackPane>
